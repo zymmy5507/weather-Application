@@ -1,0 +1,77 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #74ebd5, #acb6e5);
+    animation: gradientBG 10s infinite alternate;
+  }
+  
+  /* Gradient animation */
+  @keyframes gradientBG {
+    0% { background: linear-gradient(120deg, #74ebd5, #acb6e5); }
+    100% { background: linear-gradient(120deg, #89f7fe, #66a6ff); }
+  }
+  
+  .app-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    backdrop-filter: blur(10px);
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #004d40;
+  }
+  
+  input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+  }
+  
+  button {
+    background: #004d40;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background: #002d22;
+  }
+  
+  .weather-result {
+    margin-top: 20px;
+    color: #333;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .weather-result.hidden {
+    display: none;
+  }
+  
+  .weather-result img {
+    width: 80px;
+    margin: 10px auto;
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
